@@ -1,1 +1,36 @@
 @charset "utf-8";
+.cs {
+  display: flex;
+  width: 100%;
+  background-color: #f8f8f8;
+}
+.cs-inner {
+  display: flex;
+  padding: 55px;
+  justify-content: center;
+  gap: 3px;
+}
+.faq {
+  display: flex;
+  width: 600px;
+  padding: 30px;
+  justify-content: space-between;
+  background-color: #ffff;
+}
+.faq>img {
+  height: 100px;
+}
+.csq {
+  display: flex;
+  width: 600px;
+  padding: 30px;
+  justify-content: space-between;
+  background-color: #ffff;
+}
+h4 {
+  font-size: 32px;
+  margin-bottom: 15px;
+}
+.csq>img {
+  height: 100px;
+}

@@ -1,1 +1,107 @@
 @charset "utf-8";
+.news {
+  position: relative;
+  width: 100%;
+  padding: 55px 0;
+  color: #fff;
+  background-color: #ed1c24;
+}
+.news-bg {
+  width: 50%;
+  height: 100%;
+  background-color: #58595b;
+  position: absolute;
+  top: 0;
+  left: 50%;
+}
+.news-inner {
+  position: relative;
+  width: 100%;
+  display: flex;
+  gap: 94px;
+}
+.news-notice {
+  width: calc(100% / 2);
+  background-color: #ed1c24;
+}
+.notice-list {
+  display: flex;
+  position: relative;
+  flex-direction: column;
+}
+.notice-list li {
+  position: relative;
+  border-top: 1px solid rgba(255, 255, 255, 0.3);
+  padding: 25px 0;
+}
+.notice-list:last-child {
+  border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+}
+.notice-list li a::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  right: 10px;
+  transform: translateY(-50%);
+  width: 48px;
+  height: 23px;
+  background: url("../images/bg_common.png") no-repeat;
+  background-position: 0px -49px;
+}
+.notice-list > li > a > span {
+  color: #fff;
+  font-size: 16px;
+}
+.news-txt {
+  display: block;
+  width: 70%;
+  /* 말줄임 표시 */
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+}
+h3 {
+  font-size: 32px;
+  margin: 45px 0;
+}
+.view-list li {
+  border-top: 1px solid rgba(255, 255, 255, 0.3);
+  padding: 25px 0;
+  position: relative;
+}
+.view-list:last-child {
+  border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+}
+.view-list li a {
+  display: flex;
+
+  color: #fff;
+}
+/* .notice-list >li>a {
+  border-top: 1px solid #ffffff;
+  padding: 20px;
+    color: #fff;
+} */
+.news-view {
+  width: calc(100% / 2);
+  /* background-color: blueviolet; */
+}
+.view-list {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+.view-list li a {
+  color: #fff;
+}
+.view-list li a::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  right: 10px;
+  transform: translateY(-50%);
+  width: 48px;
+  height: 23px;
+  background: url("../images/bg_common.png") no-repeat;
+  background-position: 0px -49px;
+}
