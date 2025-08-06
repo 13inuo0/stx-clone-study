@@ -1,1 +1,90 @@
 @charset "utf-8";
+.about {
+  width: 100%;
+}
+.about-inner {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  padding: 60px 0;
+}
+.about-top {
+  display: flex;
+  gap: 50px;
+  margin-bottom: 60px;
+}
+h5 {
+  font-size: 44px;
+  padding: 25px;
+}
+.about-txt {
+  display: flex;
+  flex-direction: column;
+}
+.about-txt-mini {
+  position: relative;
+  margin-left: 100px;
+}
+.about-txt-mini::before {
+  content: "";
+  width: 30px;
+  height: 4px;
+  background-color: #ed1c24;
+  position: absolute;
+  top: 10px;
+  left: -75px;
+}
+.about-txt-mini p {
+  font-size: 21px;
+  font-weight: bold;
+  margin-bottom: 15px;
+  /* padding: 25px; */
+}
+.about-txt-mini span {
+  font-size: 13px;
+}
+/* 회사소개 하단 */
+.about-list {
+  display: flex;
+  justify-content: center;
+}
+.about-list ul {
+  width: 60%;
+  display: flex;
+  /* gap: 120px; */
+  justify-content: space-between;
+}
+.about-list > ul > li {
+  display: flex;
+  /* width: calc(100% / 3); */
+}
+.about-list > ul > li > a {
+  width: 110px;
+  position: relative;
+  /* height: 200px; */
+  /* background-color: aqua; */
+  display: flex;
+  flex-direction: column;
+  /* flex-direction: column-reverse; */
+  align-items: center;
+  gap: 10px;
+}
+.about-list > ul > li > a::before {
+  content: "";
+  display: block;
+  width: 110px;
+  height: 108px;
+  background: url("../images/bg_icon.png") no-repeat;
+  background-position: 0px 0px;
+  margin: auto;
+}
+.about-list > ul > li:nth-child(2) > a::before {
+  background-position: -110px 0;
+}
+.about-list > ul > li:nth-child(3) > a::before {
+  background-position: -220px 0;
+}
+.about-list ul li a span{
+    font-size: 18px;
+    font-weight: 500;
+}

@@ -6,7 +6,7 @@
 }
 .cs-inner {
   display: flex;
-  padding: 55px;
+  padding: 60px 0;
   justify-content: center;
   gap: 3px;
 }
@@ -19,6 +19,9 @@
 }
 .faq>img {
   height: 100px;
+}
+.faq-txt>a>span{
+  font-size: 13px;
 }
 .csq {
   display: flex;
@@ -33,4 +36,7 @@ h4 {
 }
 .csq>img {
   height: 100px;
+}
+.csq-txt>a>span{
+  font-size: 13px;
 }
