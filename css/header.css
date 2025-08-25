@@ -55,6 +55,7 @@
   /* height: 80px; */
 }
 .gnb > li > a {
+  position: relative;
   display: block;
   line-height: 80px;
   width: 100%;
@@ -64,15 +65,17 @@
   color: crimson;
 }
 .depth2 {
-  padding: 50px 0;
-  opacity: 0;
-  visibility: hidden;
+position: absolute;
+top: 70px;
+left: 0;
+  /* opacity: 0; */
+  /* visibility: hidden; */
   transition: all 0.5s;
   /* background-color: #333; */
 }
 .gnb:hover .depth2 {
-  opacity: 1;
-  visibility: visible;
+  /* opacity: 1;
+  visibility: visible; */
 }
 .depth2 > li > a {
   /* display: block; */

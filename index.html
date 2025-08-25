@@ -44,8 +44,33 @@
     <meta property="og:description" content="STX건설 웹사이트입니다." />
     <!-- js -->
     <script src="js/main.js"></script>
+    <script src="js/modal.js"></script>
   </head>
   <body>
+    <!-- 모달창 -->
+         <div class="modal-wrap">
+      <div class="modal-main">
+        <span class="modal-logo"></span>
+        <p class="modal-notice">
+          해당 사이트는 <strong>스타디용</strong>으로 제작되었으며,<br />
+          리소스는 <strong>원저작자</strong>에게 있음을 알려드립니다. <br />
+          문제사항이 있을 시 연락주시면 빠른 시일 내 조치하겠습니다. <br />
+          <span>본 사이트는 CHrome에 최적화 되어있습니다.</span>
+        </p>
+        <div class="modal-close">확인했습니다. <i>(click 하여 닫기)</i></div>
+      </div>
+    </div>
+    <!-- 퀵메뉴 -->
+    <div class="fixMenu-wrap">
+      <a href="#" class="chat-btn">
+        <img src="images/chat-btn.png" alt="chat" />
+        <span>무엇을 도와드릴까요?</span>
+      </a>
+      <a href="#" class="shop-btn">STX</a>
+      <button href="#" class="top-btn"
+        ><img src="images/top-btn.png" alt="top-btn" class="top-btn-img"
+      /></button>
+    </div>
     <!-- 전체레이아웃 -->
     <div class="wrap">
       <!-- 상단메뉴 -->
@@ -75,7 +100,7 @@
               </li>
               <!-- ul>li*5>a[href=#]{메뉴$} -->
               <li>
-                <a href="#">사업분야</a>
+                <a href="#news">사업분야</a>
                 <ul class="depth2">
                   <li><a href="#">건축사업</a></li>
                   <li><a href="#">주택사업</a></li>
@@ -140,7 +165,7 @@
             </h1>
             <p>세계최고를 향해 STX건설이 힘차게 질주합니다!</p>
           </div>
-          <button class="visual-btn">버튼</button>
+          <a href="#cs"><button class="visual-btn">버튼</button></a>
         </div>
       </div>
       <!-- 비즈니스 -->
@@ -171,7 +196,7 @@
         </div>
       </section>
       <!-- 뉴스 -->
-      <section class="news">
+      <section class="news" id="news">
         <div class="news-bg"></div>
         <div class="news-inner container">
           <!-- 뉴스 공지사항 -->
@@ -228,7 +253,7 @@
         </div>
       </section>
       <!-- 고객센터 -->
-      <div class="cs">
+      <div class="cs" id="cs">
         <div class="cs-inner container">
           <!-- FAQ -->
           <div class="faq">
